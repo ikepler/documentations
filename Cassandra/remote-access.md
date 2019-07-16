@@ -10,11 +10,11 @@ To enable remote access to the Cassandra, you should bind an address to the Cass
 6. Find `broadcast_rpc_address` and fill it based on items 2 and 3.
 7. Find `seed_provider` and look on it for `seeds` item. Append the address from previous items on it. It should like this:
 
-```yaml
-seed_provider:
-    - class_name: org.apache.cassandra.locator.SimpleSeedProvider
-      parameters:
-          - seeds: "127.0.0.1,xxx.xxx.xxx.xxx"
-```
+    ```yaml
+    seed_provider:
+        - class_name: org.apache.cassandra.locator.SimpleSeedProvider
+          parameters:
+              - seeds: "127.0.0.1,xxx.xxx.xxx.xxx"
+    ```
 
 8. Restart the Cassandra service!
